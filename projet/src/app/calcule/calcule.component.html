@@ -2,7 +2,23 @@
 
 <div >
   <h1>Calcule de salaire</h1>
-  votre salaire brute: <input type="number" min="300"><br>
-<button class="btn btn-primary">Calculer</button>
+  votre salaire brute: <input name="sb" [(ngModel)]="sb" type="number" min="300"><br>
+<button (click)="calculer()" class="btn btn-primary">Calculer</button>
+
 </div>
+<table>
+  <tr>
+    <td>Salaire brute</td>
+    <td>{{sb}}</td>
+  </tr>
+  <tr>
+    <td>taxe</td>
+    <td>{{taxe}}</td>
+  </tr>
+  <tr>
+    <td>Salaire nette</td>
+    <td>{{sn}}</td>
+  </tr>
+
+</table>
 </form>
