@@ -4,15 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { FormsModule } from '@angular/forms';
+import { CalculeComponent } from './calcule/calcule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    CalculeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
