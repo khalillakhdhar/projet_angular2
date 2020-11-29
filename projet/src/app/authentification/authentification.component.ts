@@ -15,5 +15,14 @@ export class AuthentificationComponent implements OnInit {
     this.user.login = "teste";
 
   }
+  login() {
+    if ((this.user.login == "teste") && (this.user.mdp == "teste"))
+      window.location.replace('calcule');
+    else
+      alert("le login ou mot de passe est incorrecte");
+
+
+
+  }
 
 }
